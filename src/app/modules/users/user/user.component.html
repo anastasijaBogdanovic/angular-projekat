@@ -1,0 +1,36 @@
+<div *ngIf="vm$ | async as vm">
+  <div *ngIf="vm.isLoggedIn">
+    <ng-container *ngIf="listOfPosts" class="post-container">
+      <div *ngFor="let post of listOfPosts">
+        <mat-card id="posts-card">
+          <mat-card-header class="title">
+            <h2>{{post.title}}</h2>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="excerpt">
+              <h3>{{post.excerpt}}</h3>
+            </div>
+            <div class="body">
+              <p>{{post.body}}</p>
+            </div>
+            <div class="category">
+              <p>Category: {{post.categoryId.name}}</p>
+            </div>
+            <div class="slug">
+              <p>{{post.slug}}</p>
+            </div>
+            <div class="created">
+              <i>Created: {{post.created | date: "dd/MM/yyyy hh:mm"}}</i>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </ng-container>
+    <div *ngIf="!listOfPosts.length" class="no-posts">
+      <h1>There are no posts yet :(</h1>
+    </div>
+  </div>
+  <div *ngIf="!vm.isLoggedIn">
+    <h1>Please log in to see posts!</h1>
+  </div>
+</div>

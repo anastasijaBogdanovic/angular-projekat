@@ -1,0 +1,28 @@
+#posts-card {
+  margin: 5vh 0;
+
+  .category {
+
+  }
+
+  .excerpt {
+    color: #2478af;
+  }
+
+}
+
+.no-posts {
+  padding: 4vh 0;
+  color: red;
+}
+
+.comment-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .comment-btn {
+    text-align: center;
+    margin: 3vh 0;
+  }
+}
