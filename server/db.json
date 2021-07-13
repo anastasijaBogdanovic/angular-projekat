@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "396eebaa-7253-44d5-8959-5524c751ca7b",
+      "username": "user",
+      "password": "b14361404c078ffd549c03db443c3fede2f3e534d73f78f77301ed97d4a436a9fd9db05ee8b325c0ad36438b43fec8510c204fc1c1edb21d0941c00e9e2c1ce2",
+      "email": "user@mail.com",
+      "role": "user"
+    },
+    {
+      "id": "4c0b315b-be41-46cf-97a9-9f15ba465b50",
+      "username": "admin",
+      "password": "c7ad44cbad762a5da0a452f9e854fdc1e0e7a52a38015f23f3eab1d80b931dd472634dfac71cd34ebc35d16ab7fb8a90c81f975113d6c7538dc69dd8de9077ec",
+      "email": "admin@mail.com",
+      "role": "admin"
+    },
+    {
+      "id": "9133680d-53d9-49cb-b65a-129a75b9b97c",
+      "username": "test",
+      "password": "ee26b0dd4af7e749aa1a8ee3c10ae9923f618980772e473f8819a5d4940e0db27ac185f8a0e1d5f84f88bc887fd67b143732c304cc5fa9ad8e6f57f50028a8ff",
+      "email": "test@test.com",
+      "role": "user"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "lifestyle"
+    },
+    {
+      "id": 2,
+      "name": "photography"
+    },
+    {
+      "id": 3,
+      "name": "video_games"
+    },
+    {
+      "id": 4,
+      "name": "anime&manga"
+    },
+    {
+      "id": 5,
+      "name": "health&food"
+    },
+    {
+      "id": 6,
+      "name": "music"
+    }
+  ],
+  "posts": []
+}
