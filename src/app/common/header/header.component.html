@@ -1,0 +1,18 @@
+<p>
+  <mat-toolbar color="primary">
+    <span [routerLink]="['/']" class="logo">My Blog</span>
+    <span class="example-spacer"></span>
+    <span *ngIf="vm$ | async as vm">
+    <button *ngIf="!vm.isLoggedIn" mat-icon-button class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon" [routerLink]="['/log-in']">
+      Login
+    </button>
+    <button *ngIf="vm.isLoggedIn" mat-icon-button class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon"
+            (click)="logout()"
+    >
+      Logout
+    </button>
+      </span>
+  </mat-toolbar>
+</p>
