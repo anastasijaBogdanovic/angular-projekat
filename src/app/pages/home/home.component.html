@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="home-contaner">
+    <div>
+      <h1>Blog</h1>
+    </div>
+    <div>
+      <p>
+        Welcome to my blog! Here you can find articles on various topics, some useful and some fun. Feel free to share and give suggestions, it would mean a lot to me. Enjoy!
+      </p>
+    </div>
+    <h2 class="header">Posts</h2>
+    <div *ngIf="vm$ | async as vm">
+      <div *ngIf="vm.isAdmin">
+        <app-admin></app-admin>
+      </div>
+      <div *ngIf="!vm.isAdmin">
+        <app-user></app-user>
+      </div>
+    </div>
+  </div>
+</div>
